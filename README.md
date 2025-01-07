@@ -118,7 +118,7 @@ angular:
 - **Modify Velocities**: Change `msg.linear.x` or `msg.angular.z` in the `move_robot` method to adjust the robot's speed or rotation.
 - **Adjust Timer Interval**: Update the timer duration in the constructor to alter the frequency of published messages.
 
-- **Summary**
+- ##Summary
 The **Robot Movement** ROS 2 package provides a simple node that controls a robot's movement by publishing velocity commands to the `/cmd_vel` topic using the `geometry_msgs::msg::Twist` message type. 
 It allows the robot to move forward with a slight rotation by setting linear and angular velocities. 
 The node publishes messages at a fixed interval (100 ms), and it can be easily adapted for any robot subscribing to `/cmd_vel`. 
