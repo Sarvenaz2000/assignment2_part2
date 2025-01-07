@@ -1,3 +1,7 @@
+**Sarvenaz Ashoori**
+**ID : 6878764**
+
+
 **Robot Movement**
 this Ros2 package contains simple node that controls the movement of a robot by publishing velocity commands to the /cmd_vel topic he node uses
 the geometry_msgs::msg::Twist message type to control both the linear and angular velocities of the robot. This example node can be easily adapted 
@@ -113,6 +117,13 @@ angular:
 
 - **Modify Velocities**: Change `msg.linear.x` or `msg.angular.z` in the `move_robot` method to adjust the robot's speed or rotation.
 - **Adjust Timer Interval**: Update the timer duration in the constructor to alter the frequency of published messages.
+
+- **Summary**
+The **Robot Movement** ROS 2 package provides a simple node that controls a robot's movement by publishing velocity commands to the `/cmd_vel` topic using the `geometry_msgs::msg::Twist` message type. 
+It allows the robot to move forward with a slight rotation by setting linear and angular velocities. 
+The node publishes messages at a fixed interval (100 ms), and it can be easily adapted for any robot subscribing to `/cmd_vel`. 
+The package requires ROS 2 (Foxy or later) and a simulation or robot setup. It includes a straightforward installation process, 
+usage instructions, and code that defines the publishing behavior, allowing for easy customization of movement speeds and intervals.
 
 
 
